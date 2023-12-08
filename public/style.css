@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+button{
+    outline: none;
+    color: rgb(14, 97, 250);
+    margin: 10px;
+    border: 2px solid rgb(14, 97, 250);
+    cursor: pointer;
+}
+
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    height: 25vh;
+    border: 2px solid rgb(14, 97, 250);
+    padding: 16px;
+}
+
+.banner-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#close{
+    background: none;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
+}
+
+.banner-body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+}
+
+.banner-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#customize{
+    height: 4vh;
+    width: 100px;
+    background: none;
+    transition: all ease-in-out .25s;
+}
+
+#reject{
+    height: 4vh;
+    width: 100px;
+    background: none;
+    transition: all ease-in-out .25s;
+}
+
+#accept{
+    height: 4vh;
+    width: 100px;
+    background: rgb(14, 97, 250);
+    transition: all ease-in-out .25s;
+    color: white;
+}
+
+#customize:hover{
+    background: rgb(160, 190, 247);
+    /* color: white; */
+    border-color: rgb(117, 160, 238);
+}
+
+#reject:hover{
+    background: rgb(160, 190, 247);
+    /* color: white; */
+    border-color: rgb(117, 160, 238);
+}
+
+#accept:hover{
+    background: rgb(7, 54, 141);
+}
+
+
+
+
+@media screen and (max-width: 850px) {
+    .banner-container{
+        width: 90%;
+        padding: 10px;
+    }
+}
+
+
+@media screen and (max-width: 450px) {
+    .banner-container{
+        width: 100%;
+    }
+}
+
